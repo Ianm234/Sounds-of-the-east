@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            <link rel="stylesheet" href="index.css">
+        </title>
+    </head>
+    <body>
+        <div class="main">
+          <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="HatchfulExport-All/logo.png" alt="logo">
+            </div>
+          </nav>
+          <div class="Information">
+            <div class="overlay"></div>
+              <img src="HatchfulExport-All/download (2).jpeg" class="Juice" alt="Juices">
+              <div id="circle">
+                <div class="feature one"></div>
+                   <img src="HatchfulExport-All/download.jpeg" alt="Instragram">
+                    <div>
+                        <h1>Instragram</h1>
+                        <p>@Sounds_of_the.east</p>
+                    </div>
+                <div class="feature two"></div>
+                   <img src="HatchfulExport-All/download (1).jpeg" alt="Whatsapp">
+                   <div>
+                    <h1>Whatsapp</h1>
+                    <p>0112815769</p>
+                </div>
+                <div class="feature three"></div>
+                   <img src="HatchfulExport-All/download.png" alt="Tiktok">
+                   <div>
+                    <h1>Tiktok</h1>
+                    <p>@Sounds_of_the.east</p>
+                </div>
+                <div class="feature four"></div>
+                   <img src="HatchfulExport-All/images.png" alt="Twitter"> 
+                   <div>
+                    <h1>Twitter</h1>
+                    <p>@Sounds_of_the.east</p>
+                </div>
+              </div>
+          </div>
+        </div>
+    <div>
+      <div class="controls">
+        <img src="HatchfulExport-All/25637.png" alt="up" id="upBtn">
+        <h3>Socials</h3>
+        <img srcset="HatchfulExport-All/download (1).png" alt="down" id="downBtn">
+      </div> 
+     </div>
+     <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+
+        upBtn.oneclick = function()
+        {
+            rotateSum = rotatevalue +'rotate(-90deg)'
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum
+        }
+        downBtn.oneclick = function()
+        {
+            rotateSum = rotatevalue +'rotate(+90deg)'
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum
+        }
+     </script>
+   </body>
+</html>
